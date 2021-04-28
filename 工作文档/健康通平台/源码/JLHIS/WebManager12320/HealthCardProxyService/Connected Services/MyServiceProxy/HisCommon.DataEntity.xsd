@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HisCommon.DataEntity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HisCommon.DataEntity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Platform_StopReg_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BEGIN_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEPT_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCTOR_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="END_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_CANCEL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IS_REFUND" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REG_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="STOP_REMARK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIME_FLAG" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_StopReg_InParam" nillable="true" type="tns:Platform_StopReg_InParam" />
+  <xs:complexType name="Platform_StopReg_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_StopReg_OutParamInfo" nillable="true" type="tns:Platform_StopReg_OutParamInfo" />
+  <xs:complexType name="Platform_CancelRegByHIS_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CANCEL_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CANCEL_REMARK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_CancelRegByHIS_InParam" nillable="true" type="tns:Platform_CancelRegByHIS_InParam" />
+  <xs:complexType name="Platform_CancelRegByHIS_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_CancelRegByHIS_OutParamInfo" nillable="true" type="tns:Platform_CancelRegByHIS_OutParamInfo" />
+  <xs:complexType name="Platform_RefundByHIS_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSP_ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSP_REFUND_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_FEE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_REMARK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOTAL_FEE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_RefundByHIS_InParam" nillable="true" type="tns:Platform_RefundByHIS_InParam" />
+  <xs:complexType name="Platform_RefundByHIS_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutParam" nillable="true" type="tns:Platform_RefundByHIS_OutParam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_RefundByHIS_OutParamInfo" nillable="true" type="tns:Platform_RefundByHIS_OutParamInfo" />
+  <xs:complexType name="Platform_RefundByHIS_OutParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="REFUND_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_RefundByHIS_OutParam" nillable="true" type="tns:Platform_RefundByHIS_OutParam" />
+  <xs:complexType name="Platform_PrintRegByHIS_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSP_SERIAL_NUM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PRINT_DATE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_PrintRegByHIS_InParam" nillable="true" type="tns:Platform_PrintRegByHIS_InParam" />
+  <xs:complexType name="Platform_PrintRegByHIS_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_PrintRegByHIS_OutParamInfo" nillable="true" type="tns:Platform_PrintRegByHIS_OutParamInfo" />
+  <xs:complexType name="Platform_PayRegByHIS_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSP_SERIAL_NUM" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAY_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PAY_FEE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_PayRegByHIS_InParam" nillable="true" type="tns:Platform_PayRegByHIS_InParam" />
+  <xs:complexType name="Platform_PayRegByHIS_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_PayRegByHIS_OutParamInfo" nillable="true" type="tns:Platform_PayRegByHIS_OutParamInfo" />
+  <xs:complexType name="Platform_QueryRegRefund_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSP_REFUND_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_QueryRegRefund_InParam" nillable="true" type="tns:Platform_QueryRegRefund_InParam" />
+  <xs:complexType name="Platform_QueryRegRefund_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutParam" nillable="true" type="tns:Platform_QueryRegRefund_OutParam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_QueryRegRefund_OutParamInfo" nillable="true" type="tns:Platform_QueryRegRefund_OutParamInfo" />
+  <xs:complexType name="Platform_QueryRegRefund_OutParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="REFUND_COUNT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_FEE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOTAL_FEE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_QueryRegRefund_OutParam" nillable="true" type="tns:Platform_QueryRegRefund_OutParam" />
+  <xs:complexType name="Platform_RefundPay_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSP_REFUND_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSP_SEQUENCE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_DATE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_FEE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_REMARK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOTAL_FEE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_RefundPay_InParam" nillable="true" type="tns:Platform_RefundPay_InParam" />
+  <xs:complexType name="Platform_RefundPay_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutParam" nillable="true" type="tns:Platform_RefundPay_OutParam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_RefundPay_OutParamInfo" nillable="true" type="tns:Platform_RefundPay_OutParamInfo" />
+  <xs:complexType name="Platform_RefundPay_OutParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="REFUND_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_RefundPay_OutParam" nillable="true" type="tns:Platform_RefundPay_OutParam" />
+  <xs:complexType name="Platform_QueryPayRefund_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="HOSP_REFUND_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_QueryPayRefund_InParam" nillable="true" type="tns:Platform_QueryPayRefund_InParam" />
+  <xs:complexType name="Platform_QueryPayRefund_OutParamInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutParam" nillable="true" type="tns:Platform_QueryPayRefund_OutParam" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_QueryPayRefund_OutParamInfo" nillable="true" type="tns:Platform_QueryPayRefund_OutParamInfo" />
+  <xs:complexType name="Platform_QueryPayRefund_OutParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="REFUND_COUNT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_FEE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REFUND_STATUS" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TOTAL_FEE" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_QueryPayRefund_OutParam" nillable="true" type="tns:Platform_QueryPayRefund_OutParam" />
+  <xs:complexType name="Platform_PushInfo_InParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATA_INFO" nillable="true" type="tns:ArrayOfDataInfo" />
+      <xs:element minOccurs="0" name="HOS_ID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_PushInfo_InParam" nillable="true" type="tns:Platform_PushInfo_InParam" />
+  <xs:complexType name="ArrayOfDataInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DataInfo" nillable="true" type="tns:DataInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDataInfo" nillable="true" type="tns:ArrayOfDataInfo" />
+  <xs:complexType name="DataInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DATA_TIME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DEPT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DOCTOR_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HEALTH_CARD_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="HOSP_ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ORDER_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PATIENT_AGE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PATIENT_NAME" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PATIENT_SEX" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PUSH_CONTENT" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PUSH_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PUSH_TYPE" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="REG_DT" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DataInfo" nillable="true" type="tns:DataInfo" />
+  <xs:complexType name="Platform_PushInfo_OutParam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ErrMsg" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Platform_PushInfo_OutParam" nillable="true" type="tns:Platform_PushInfo_OutParam" />
+</xs:schema>

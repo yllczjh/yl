@@ -1,0 +1,29 @@
+
+
+客户端
+1.添加新模块Cloud.Xt.His.Sjsb(Cloud.Xt.His.Sjsb.dll)
+2.修改Cloud.Xt.His.Zygl下：  F_HLZX_XGBRXX.cs、F_同步手术.cs(Cloud.Xt.His.Zygl.dll)
+3.修改Cloud.Xt.His.Xbzyys下：  F_手术申请单.cs(Cloud.Xt.His.Xbzyys.dll)
+
+4.修改Cloud.Xt.Share\Cloud.Xt.Share.DtsDts\C_系统信息.cs(Cloud.Xt.Share.DtsDts.dll)
+
+
+
+
+服务端
+1.Cloud.Xt.Soa\Cloud.Xt.Soa.His  添加 数据上报\C_数据上报.cs (Cloud.Xt.Soa.His.dll)
+2.其他修改文件：
+	(1)：Cloud.Xt.Soa\Cloud.Xt.Soa\C_服务总线.cs  (Cloud.Xt.Soa.dll)
+	(2)：Cloud.Xt.Soa\Cloud.Xt.Soa\C_服务总线_数据流.cs
+	(3)：Cloud.Xt.Soa\Cloud.Xt.Soa.His\C_服务总线_医院.cs
+	(4)：Cloud.Xt.Soa\Cloud.Xt.Soa.His\C_服务总线_医院_数据流.cs
+	(5)：Cloud.Xt.Soa\Cloud.Xt.Soa.His\住院管理\C_住院公用.cs
+	
+	
+
+
+
+数据库
+1.添加表：病案管理_项目信息，病案管理_项目字典分类，病案管理_项目字典明细，病案管理_项目字典对应关系，病案管理_项目字段对照，病案管理_项目导出记录，临时表_病案首页新（执行文件：数据上报新加表.sql）
+2.添加存储过程：PR_病案首页_获取导出记录（执行文件：PR_病案首页_获取导出数据.prc）
+3.表【住院管理_病案首页手术表】添加字段：麻醉方式编码，切口愈合等级编码，手术等级编码（执行文件：住院管理_病案首页手术表新加字段.sql）

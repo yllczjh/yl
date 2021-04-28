@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="GBK"?>
+<!-- fileVers元素的属性说明：
+DLUpdZipUrl:接受 ReqInfo（即需要下载哪些文件的信息），然后将相关文件打包并回传给请求端的 URL
+-->
+<fileVers DLUpdZipUrl="/jsp/prjs/updClientServ.jsp?Act=GetZipFile" testC="中国">
+	<fileVer name="appConfig0.ini" md5="32502DF74A975FF421E13298A53F7075" needUpd="0"/>
+	<fileVer name="user.dat" md5="040CBCE6DA749748412E6414792B96A1" needUpd="0"/>
+	<fileVer name="copyMainApp.exe" md5="5396335BE1B6E1BC74E3ED61AD560FB8" needUpd="0"/>
+	<fileVer name="HQMSTran.exe" md5="0B4039F7E3F0A8BBD5B75469284E05AB" needUpd="1"/>
+	<fileVer name="LogerSet.ini" md5="F11544D4A2680DCB912520EB403FD595" needUpd="0"/>
+	<fileVer name="pcrelib.dll" md5="A8DB0E73B57C17DC106C59318533AB04" needUpd="0"/>
+	<fileVer name="libeay32.dll" md5="AF110A2A0A15FA29309F9EC5F386D1FB" needUpd="0"/>
+	<fileVer name="libssl32.dll" md5="F273F11CC4FFF46B9B9C4FD2A009E7F4" needUpd="0"/>
+	<fileVer name="ssleay32.dll" md5="78E0FA4A92F8BE8F4A6191AAEA451341" needUpd="0"/>
+	<fileVer name="ws\hqcm_tran_tmpl_part1.dbf" md5="8649BB84778E2840C7CB09D63A61CA4B" needUpd="0"/>
+	<fileVer name="ws\hqcm_tran_tmpl_part2.dbf" md5="92C36FA28F88E640FD25C4BE27C94E4B" needUpd="0"/>
+</fileVers>

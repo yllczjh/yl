@@ -1,0 +1,6 @@
+LIBRARY "Yfmedicalcare"
+EXPORTS
+	callpopwindow
+	callfloatwindow
+	closecallfloatwindow
+	calldruginfowindow

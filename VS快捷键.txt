@@ -1,0 +1,25 @@
+Ctrl + M + O: 折叠所有方法
+Ctrl + M + M: 折叠或者展开当前方法
+Ctrl + M + L: 展开所有方法
+Ctrl + K + D: 格式化代码
+Ctrl + K + C: 注释
+Ctrl + K + U: 反注释
+Ctrl + Shift +}： 在匹配的括号、括号内选择文本
+Ctrl + Shift + Enter：在当前行下方插入空行
+Ctrl +J：智能感知
+Alt+右箭头：显示提示
+Alt+上下箭头：行上下移动
+Shift+F7:代码到设计界面
+Ctrl + U: 转小写
+Ctrl + Shift + U: 转大写
+
+
+windows命令
+services.msc：打开服务
+ctfmon.exe
+
+
+win+shift+s 截图
+
+
+

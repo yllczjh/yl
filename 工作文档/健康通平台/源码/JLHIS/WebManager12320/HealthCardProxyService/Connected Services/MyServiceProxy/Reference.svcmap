@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="2c190565-dc22-409d-947e-4b512cb14566" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/HealthCardWcfService/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="ae74b1ba-9eb8-454d-88c2-58c57615f75c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HealthCardWcfService/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="0df73b82-d261-49fb-92ca-786f42ab81c6" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HealthCardWcfService/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="c30cec3c-7a10-4490-9fec-501590b7329d" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HealthCardWcfService/Service1/mex" />
+    <MetadataFile FileName="HealthCardWcfService.xsd" MetadataType="Schema" ID="17342b32-7cde-4230-9c81-0cc24910a8ab" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HealthCardWcfService/Service1/mex" />
+    <MetadataFile FileName="HisCommon.DataEntity.xsd" MetadataType="Schema" ID="a370d8f7-2ce5-41aa-9d78-b4738b6ee158" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HealthCardWcfService/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

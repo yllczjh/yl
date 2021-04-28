@@ -1,0 +1,6 @@
+2020-09-21 11:54:23 : 程序开始运行...
+2020-09-21 11:54:23 : HQMS数据对接前置机程序 V2.0.1.31
+2020-09-21 11:54:23 : FDLVerXMLUrl=https://ts.hqms.org.cn/jsp/prjs/updClientServ.jsp?Act=GetVerXML
+2020-09-21 11:54:26 : 连接失败：拒绝访问。URL:https://ts.hqms.org.cn/doAction
+[ifLiveOnSer]Exception(获取服务器时间失败。[GetServerCurTime]Exception(连接失败：拒绝访问。))
+2020-09-21 11:54:42 : ...程序关闭

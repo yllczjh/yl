@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets >
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>ooo_反射获取类</Title>
+            <Shortcut>ooo_反射获取类</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			string str_namespace = "Cloud.Xt.His.Pay.Interface." + str_类名;
+            Type t = Type.GetType(str_namespace);
+            IPayHelper = (I_PayHelper)t.Assembly.CreateInstance(str_namespace);
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>ooo_自定义控件添加事件</Title>
+            <Shortcut>ooo_自定义控件添加事件</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			public event EventHandler PayTypeCheckChange;
+			private void check_CheckedChanged(object sender, EventArgs e)
+			{
+			//控件的某事件中调用自定义事件
+             PayTypeCheckChange?.Invoke(sender, e);
+			}
+			//使用此控件时，事件中会多一个PayTypeCheckChange
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>

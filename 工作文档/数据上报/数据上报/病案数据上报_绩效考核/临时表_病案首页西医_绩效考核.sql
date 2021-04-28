@@ -1,0 +1,2002 @@
+-- CREATE TABLE
+CREATE GLOBAL TEMPORARY TABLE 临时表_病案首页西医_绩效考核
+(
+  住院病历号   VARCHAR2(100),
+  A01     VARCHAR2(22),
+  A02     VARCHAR2(80),
+  A48     VARCHAR2(50),
+  A49     NUMBER(4),
+  B12     DATE,
+  B15     DATE,
+  A47     VARCHAR2(50),
+  A46C    VARCHAR2(3),
+  A11     VARCHAR2(40),
+  A12C    NUMBER(1),
+  A13     DATE,
+  A14     NUMBER(3),
+  A15C    VARCHAR2(40),
+  A21C    VARCHAR2(1),
+  A38C    VARCHAR2(2),
+  A19C    VARCHAR2(2),
+  A20N    VARCHAR2(1),
+  A20     VARCHAR2(18),
+  A22     VARCHAR2(200),
+  A23C    VARCHAR2(50),
+  A24     VARCHAR2(200),
+  A25C    VARCHAR2(6),
+  A26     VARCHAR2(200),
+  A27     VARCHAR2(40),
+  A28C    VARCHAR2(6),
+  A29     VARCHAR2(200),
+  A30     VARCHAR2(20),
+  A31C    VARCHAR2(6),
+  A32     VARCHAR2(40),
+  A33C    VARCHAR2(1),
+  A34     VARCHAR2(200),
+  A35     VARCHAR2(40),
+  B38     VARCHAR2(1),
+  B11C    VARCHAR2(1),
+  B13C    VARCHAR2(6),
+  B14     VARCHAR2(30),
+  B21C    VARCHAR2(100),
+  B16C    VARCHAR2(6),
+  B17     VARCHAR2(30),
+  B20     NUMBER(6),
+  C01C    VARCHAR2(20),
+  C02N    VARCHAR2(100),
+  C03C    VARCHAR2(20),
+  C04N    VARCHAR2(100),
+  C05C    VARCHAR2(10),
+  C06X01C VARCHAR2(20),
+  C06X02C VARCHAR2(20),
+  C06X03C VARCHAR2(20),
+  C06X04C VARCHAR2(20),
+  C06X05C VARCHAR2(20),
+  C06X06C VARCHAR2(20),
+  C06X07C VARCHAR2(20),
+  C06X08C VARCHAR2(20),
+  C06X09C VARCHAR2(20),
+  C06X10C VARCHAR2(20),
+  C06X11C VARCHAR2(20),
+  C06X12C VARCHAR2(20),
+  C06X13C VARCHAR2(20),
+  C06X14C VARCHAR2(20),
+  C06X15C VARCHAR2(20),
+  C06X16C VARCHAR2(20),
+  C06X17C VARCHAR2(20),
+  C06X18C VARCHAR2(20),
+  C06X19C VARCHAR2(20),
+  C06X20C VARCHAR2(20),
+  C06X21C VARCHAR2(20),
+  C06X22C VARCHAR2(20),
+  C06X23C VARCHAR2(20),
+  C06X24C VARCHAR2(20),
+  C06X25C VARCHAR2(20),
+  C06X26C VARCHAR2(20),
+  C06X27C VARCHAR2(20),
+  C06X28C VARCHAR2(20),
+  C06X29C VARCHAR2(20),
+  C06X30C VARCHAR2(20),
+  C06X31C VARCHAR2(20),
+  C06X32C VARCHAR2(20),
+  C06X33C VARCHAR2(20),
+  C06X34C VARCHAR2(20),
+  C06X35C VARCHAR2(20),
+  C06X36C VARCHAR2(20),
+  C06X37C VARCHAR2(20),
+  C06X38C VARCHAR2(20),
+  C06X39C VARCHAR2(20),
+  C06X40C VARCHAR2(20),
+  C07X01N VARCHAR2(100),
+  C07X02N VARCHAR2(100),
+  C07X03N VARCHAR2(100),
+  C07X04N VARCHAR2(100),
+  C07X05N VARCHAR2(100),
+  C07X06N VARCHAR2(100),
+  C07X07N VARCHAR2(100),
+  C07X08N VARCHAR2(100),
+  C07X09N VARCHAR2(100),
+  C07X10N VARCHAR2(100),
+  C07X11N VARCHAR2(100),
+  C07X12N VARCHAR2(100),
+  C07X13N VARCHAR2(100),
+  C07X14N VARCHAR2(100),
+  C07X15N VARCHAR2(100),
+  C07X16N VARCHAR2(100),
+  C07X17N VARCHAR2(100),
+  C07X18N VARCHAR2(100),
+  C07X19N VARCHAR2(100),
+  C07X20N VARCHAR2(100),
+  C07X21N VARCHAR2(100),
+  C07X22N VARCHAR2(100),
+  C07X23N VARCHAR2(100),
+  C07X24N VARCHAR2(100),
+  C07X25N VARCHAR2(100),
+  C07X26N VARCHAR2(100),
+  C07X27N VARCHAR2(100),
+  C07X28N VARCHAR2(100),
+  C07X29N VARCHAR2(100),
+  C07X30N VARCHAR2(100),
+  C07X31N VARCHAR2(100),
+  C07X32N VARCHAR2(100),
+  C07X33N VARCHAR2(100),
+  C07X34N VARCHAR2(100),
+  C07X35N VARCHAR2(100),
+  C07X36N VARCHAR2(100),
+  C07X37N VARCHAR2(100),
+  C07X38N VARCHAR2(100),
+  C07X39N VARCHAR2(100),
+  C07X40N VARCHAR2(100),
+  C08X01C VARCHAR2(10),
+  C08X02C VARCHAR2(10),
+  C08X03C VARCHAR2(10),
+  C08X04C VARCHAR2(10),
+  C08X05C VARCHAR2(10),
+  C08X06C VARCHAR2(10),
+  C08X07C VARCHAR2(10),
+  C08X08C VARCHAR2(10),
+  C08X09C VARCHAR2(10),
+  C08X10C VARCHAR2(10),
+  C08X11C VARCHAR2(10),
+  C08X12C VARCHAR2(10),
+  C08X13C VARCHAR2(10),
+  C08X14C VARCHAR2(10),
+  C08X15C VARCHAR2(10),
+  C08X16C VARCHAR2(10),
+  C08X17C VARCHAR2(10),
+  C08X18C VARCHAR2(10),
+  C08X19C VARCHAR2(10),
+  C08X20C VARCHAR2(10),
+  C08X21C VARCHAR2(10),
+  C08X22C VARCHAR2(10),
+  C08X23C VARCHAR2(10),
+  C08X24C VARCHAR2(10),
+  C08X25C VARCHAR2(10),
+  C08X26C VARCHAR2(10),
+  C08X27C VARCHAR2(10),
+  C08X28C VARCHAR2(10),
+  C08X29C VARCHAR2(10),
+  C08X30C VARCHAR2(10),
+  C08X31C VARCHAR2(10),
+  C08X32C VARCHAR2(10),
+  C08X33C VARCHAR2(10),
+  C08X34C VARCHAR2(10),
+  C08X35C VARCHAR2(10),
+  C08X36C VARCHAR2(10),
+  C08X37C VARCHAR2(10),
+  C08X38C VARCHAR2(10),
+  C08X39C VARCHAR2(10),
+  C08X40C VARCHAR2(10),
+  C09C    VARCHAR2(20),
+  C10N    VARCHAR2(100),
+  C11     VARCHAR2(50),
+  C12C    VARCHAR2(20),
+  C13N    VARCHAR2(100),
+  C24C    VARCHAR2(1),
+  C25     VARCHAR2(200),
+  B22C    VARCHAR2(30),
+  B22     VARCHAR2(40),
+  B23C    VARCHAR2(30),
+  B23     VARCHAR2(40),
+  B24C    VARCHAR2(30),
+  B24     VARCHAR2(40),
+  B25C    VARCHAR2(30),
+  B25     VARCHAR2(40),
+  B26C    VARCHAR2(30),
+  B26     VARCHAR2(40),
+  B27     VARCHAR2(40),
+  B28     VARCHAR2(40),
+  B29     VARCHAR2(40),
+  B30C    VARCHAR2(1),
+  B31     VARCHAR2(40),
+  B32     VARCHAR2(40),
+  B33     DATE,
+  C34C    VARCHAR2(1),
+  C26C    VARCHAR2(1),
+  C27C    VARCHAR2(1),
+  C14X01C VARCHAR2(20),
+  C15X01N VARCHAR2(100),
+  C16X01  DATE,
+  C17X01  VARCHAR2(10),
+  C18X01  VARCHAR2(40),
+  C19X01  VARCHAR2(40),
+  C20X01  VARCHAR2(40),
+  C21X01C VARCHAR2(10),
+  C22X01C VARCHAR2(10),
+  C23X01  VARCHAR2(40),
+  C35X01C VARCHAR2(20),
+  C35X02C VARCHAR2(20),
+  C35X03C VARCHAR2(20),
+  C35X04C VARCHAR2(20),
+  C35X05C VARCHAR2(20),
+  C35X06C VARCHAR2(20),
+  C35X07C VARCHAR2(20),
+  C35X08C VARCHAR2(20),
+  C35X09C VARCHAR2(20),
+  C35X10C VARCHAR2(20),
+  C35X11C VARCHAR2(20),
+  C35X12C VARCHAR2(20),
+  C35X13C VARCHAR2(20),
+  C35X14C VARCHAR2(20),
+  C35X15C VARCHAR2(20),
+  C35X16C VARCHAR2(20),
+  C35X17C VARCHAR2(20),
+  C35X18C VARCHAR2(20),
+  C35X19C VARCHAR2(20),
+  C35X20C VARCHAR2(20),
+  C35X21C VARCHAR2(20),
+  C35X22C VARCHAR2(20),
+  C35X23C VARCHAR2(20),
+  C35X24C VARCHAR2(20),
+  C35X25C VARCHAR2(20),
+  C35X26C VARCHAR2(20),
+  C35X27C VARCHAR2(20),
+  C35X28C VARCHAR2(20),
+  C35X29C VARCHAR2(20),
+  C35X30C VARCHAR2(20),
+  C35X31C VARCHAR2(20),
+  C35X32C VARCHAR2(20),
+  C35X33C VARCHAR2(20),
+  C35X34C VARCHAR2(20),
+  C35X35C VARCHAR2(20),
+  C35X36C VARCHAR2(20),
+  C35X37C VARCHAR2(20),
+  C35X38C VARCHAR2(20),
+  C35X39C VARCHAR2(20),
+  C35X40C VARCHAR2(20),
+  C36X01N VARCHAR2(100),
+  C36X02N VARCHAR2(100),
+  C36X03N VARCHAR2(100),
+  C36X04N VARCHAR2(100),
+  C36X05N VARCHAR2(100),
+  C36X06N VARCHAR2(100),
+  C36X07N VARCHAR2(100),
+  C36X08N VARCHAR2(100),
+  C36X09N VARCHAR2(100),
+  C36X10N VARCHAR2(100),
+  C36X11N VARCHAR2(100),
+  C36X12N VARCHAR2(100),
+  C36X13N VARCHAR2(100),
+  C36X14N VARCHAR2(100),
+  C36X15N VARCHAR2(100),
+  C36X16N VARCHAR2(100),
+  C36X17N VARCHAR2(100),
+  C36X18N VARCHAR2(100),
+  C36X19N VARCHAR2(100),
+  C36X20N VARCHAR2(100),
+  C36X21N VARCHAR2(100),
+  C36X22N VARCHAR2(100),
+  C36X23N VARCHAR2(100),
+  C36X24N VARCHAR2(100),
+  C36X25N VARCHAR2(100),
+  C36X26N VARCHAR2(100),
+  C36X27N VARCHAR2(100),
+  C36X28N VARCHAR2(100),
+  C36X29N VARCHAR2(100),
+  C36X30N VARCHAR2(100),
+  C36X31N VARCHAR2(100),
+  C36X32N VARCHAR2(100),
+  C36X33N VARCHAR2(100),
+  C36X34N VARCHAR2(100),
+  C36X35N VARCHAR2(100),
+  C36X36N VARCHAR2(100),
+  C36X37N VARCHAR2(100),
+  C36X38N VARCHAR2(100),
+  C36X39N VARCHAR2(100),
+  C36X40N VARCHAR2(100),
+  C37X01  DATE,
+  C37X02  DATE,
+  C37X03  DATE,
+  C37X04  DATE,
+  C37X05  DATE,
+  C37X06  DATE,
+  C37X07  DATE,
+  C37X08  DATE,
+  C37X09  DATE,
+  C37X10  DATE,
+  C37X11  DATE,
+  C37X12  DATE,
+  C37X13  DATE,
+  C37X14  DATE,
+  C37X15  DATE,
+  C37X16  DATE,
+  C37X17  DATE,
+  C37X18  DATE,
+  C37X19  DATE,
+  C37X20  DATE,
+  C37X21  DATE,
+  C37X22  DATE,
+  C37X23  DATE,
+  C37X24  DATE,
+  C37X25  DATE,
+  C37X26  DATE,
+  C37X27  DATE,
+  C37X28  DATE,
+  C37X29  DATE,
+  C37X30  DATE,
+  C37X31  DATE,
+  C37X32  DATE,
+  C37X33  DATE,
+  C37X34  DATE,
+  C37X35  DATE,
+  C37X36  DATE,
+  C37X37  DATE,
+  C37X38  DATE,
+  C37X39  DATE,
+  C37X40  DATE,
+  C38X01  VARCHAR2(10),
+  C38X02  VARCHAR2(10),
+  C38X03  VARCHAR2(10),
+  C38X04  VARCHAR2(10),
+  C38X05  VARCHAR2(10),
+  C38X06  VARCHAR2(10),
+  C38X07  VARCHAR2(10),
+  C38X08  VARCHAR2(10),
+  C38X09  VARCHAR2(10),
+  C38X10  VARCHAR2(10),
+  C38X11  VARCHAR2(10),
+  C38X12  VARCHAR2(10),
+  C38X13  VARCHAR2(10),
+  C38X14  VARCHAR2(10),
+  C38X15  VARCHAR2(10),
+  C38X16  VARCHAR2(10),
+  C38X17  VARCHAR2(10),
+  C38X18  VARCHAR2(10),
+  C38X19  VARCHAR2(10),
+  C38X20  VARCHAR2(10),
+  C38X21  VARCHAR2(10),
+  C38X22  VARCHAR2(10),
+  C38X23  VARCHAR2(10),
+  C38X24  VARCHAR2(10),
+  C38X25  VARCHAR2(10),
+  C38X26  VARCHAR2(10),
+  C38X27  VARCHAR2(10),
+  C38X28  VARCHAR2(10),
+  C38X29  VARCHAR2(10),
+  C38X30  VARCHAR2(10),
+  C38X31  VARCHAR2(10),
+  C38X32  VARCHAR2(10),
+  C38X33  VARCHAR2(10),
+  C38X34  VARCHAR2(10),
+  C38X35  VARCHAR2(10),
+  C38X36  VARCHAR2(10),
+  C38X37  VARCHAR2(10),
+  C38X38  VARCHAR2(10),
+  C38X39  VARCHAR2(10),
+  C38X40  VARCHAR2(10),
+  C39X01  VARCHAR2(40),
+  C39X02  VARCHAR2(40),
+  C39X03  VARCHAR2(40),
+  C39X04  VARCHAR2(40),
+  C39X05  VARCHAR2(40),
+  C39X06  VARCHAR2(40),
+  C39X07  VARCHAR2(40),
+  C39X08  VARCHAR2(40),
+  C39X09  VARCHAR2(40),
+  C39X10  VARCHAR2(40),
+  C39X11  VARCHAR2(40),
+  C39X12  VARCHAR2(40),
+  C39X13  VARCHAR2(40),
+  C39X14  VARCHAR2(40),
+  C39X15  VARCHAR2(40),
+  C39X16  VARCHAR2(40),
+  C39X17  VARCHAR2(40),
+  C39X18  VARCHAR2(40),
+  C39X19  VARCHAR2(40),
+  C39X20  VARCHAR2(40),
+  C39X21  VARCHAR2(40),
+  C39X22  VARCHAR2(40),
+  C39X23  VARCHAR2(40),
+  C39X24  VARCHAR2(40),
+  C39X25  VARCHAR2(40),
+  C39X26  VARCHAR2(40),
+  C39X27  VARCHAR2(40),
+  C39X28  VARCHAR2(40),
+  C39X29  VARCHAR2(40),
+  C39X30  VARCHAR2(40),
+  C39X31  VARCHAR2(40),
+  C39X32  VARCHAR2(40),
+  C39X33  VARCHAR2(40),
+  C39X34  VARCHAR2(40),
+  C39X35  VARCHAR2(40),
+  C39X36  VARCHAR2(40),
+  C39X37  VARCHAR2(40),
+  C39X38  VARCHAR2(40),
+  C39X39  VARCHAR2(40),
+  C39X40  VARCHAR2(40),
+  C40X01  VARCHAR2(40),
+  C40X02  VARCHAR2(40),
+  C40X03  VARCHAR2(40),
+  C40X04  VARCHAR2(40),
+  C40X05  VARCHAR2(40),
+  C40X06  VARCHAR2(40),
+  C40X07  VARCHAR2(40),
+  C40X08  VARCHAR2(40),
+  C40X09  VARCHAR2(40),
+  C40X10  VARCHAR2(40),
+  C40X11  VARCHAR2(40),
+  C40X12  VARCHAR2(40),
+  C40X13  VARCHAR2(40),
+  C40X14  VARCHAR2(40),
+  C40X15  VARCHAR2(40),
+  C40X16  VARCHAR2(40),
+  C40X17  VARCHAR2(40),
+  C40X18  VARCHAR2(40),
+  C40X19  VARCHAR2(40),
+  C40X20  VARCHAR2(40),
+  C40X21  VARCHAR2(40),
+  C40X22  VARCHAR2(40),
+  C40X23  VARCHAR2(40),
+  C40X24  VARCHAR2(40),
+  C40X25  VARCHAR2(40),
+  C40X26  VARCHAR2(40),
+  C40X27  VARCHAR2(40),
+  C40X28  VARCHAR2(40),
+  C40X29  VARCHAR2(40),
+  C40X30  VARCHAR2(40),
+  C40X31  VARCHAR2(40),
+  C40X32  VARCHAR2(40),
+  C40X33  VARCHAR2(40),
+  C40X34  VARCHAR2(40),
+  C40X35  VARCHAR2(40),
+  C40X36  VARCHAR2(40),
+  C40X37  VARCHAR2(40),
+  C40X38  VARCHAR2(40),
+  C40X39  VARCHAR2(40),
+  C40X40  VARCHAR2(40),
+  C41X01  VARCHAR2(40),
+  C41X02  VARCHAR2(40),
+  C41X03  VARCHAR2(40),
+  C41X04  VARCHAR2(40),
+  C41X05  VARCHAR2(40),
+  C41X06  VARCHAR2(40),
+  C41X07  VARCHAR2(40),
+  C41X08  VARCHAR2(40),
+  C41X09  VARCHAR2(40),
+  C41X10  VARCHAR2(40),
+  C41X11  VARCHAR2(40),
+  C41X12  VARCHAR2(40),
+  C41X13  VARCHAR2(40),
+  C41X14  VARCHAR2(40),
+  C41X15  VARCHAR2(40),
+  C41X16  VARCHAR2(40),
+  C41X17  VARCHAR2(40),
+  C41X18  VARCHAR2(40),
+  C41X19  VARCHAR2(40),
+  C41X20  VARCHAR2(40),
+  C41X21  VARCHAR2(40),
+  C41X22  VARCHAR2(40),
+  C41X23  VARCHAR2(40),
+  C41X24  VARCHAR2(40),
+  C41X25  VARCHAR2(40),
+  C41X26  VARCHAR2(40),
+  C41X27  VARCHAR2(40),
+  C41X28  VARCHAR2(40),
+  C41X29  VARCHAR2(40),
+  C41X30  VARCHAR2(40),
+  C41X31  VARCHAR2(40),
+  C41X32  VARCHAR2(40),
+  C41X33  VARCHAR2(40),
+  C41X34  VARCHAR2(40),
+  C41X35  VARCHAR2(40),
+  C41X36  VARCHAR2(40),
+  C41X37  VARCHAR2(40),
+  C41X38  VARCHAR2(40),
+  C41X39  VARCHAR2(40),
+  C41X40  VARCHAR2(40),
+  C42X01C VARCHAR2(10),
+  C42X02C VARCHAR2(10),
+  C42X03C VARCHAR2(10),
+  C42X04C VARCHAR2(10),
+  C42X05C VARCHAR2(10),
+  C42X06C VARCHAR2(10),
+  C42X07C VARCHAR2(10),
+  C42X08C VARCHAR2(10),
+  C42X09C VARCHAR2(10),
+  C42X10C VARCHAR2(10),
+  C42X11C VARCHAR2(10),
+  C42X12C VARCHAR2(10),
+  C42X13C VARCHAR2(10),
+  C42X14C VARCHAR2(10),
+  C42X15C VARCHAR2(10),
+  C42X16C VARCHAR2(10),
+  C42X17C VARCHAR2(10),
+  C42X18C VARCHAR2(10),
+  C42X19C VARCHAR2(10),
+  C42X20C VARCHAR2(10),
+  C42X21C VARCHAR2(10),
+  C42X22C VARCHAR2(10),
+  C42X23C VARCHAR2(10),
+  C42X24C VARCHAR2(10),
+  C42X25C VARCHAR2(10),
+  C42X26C VARCHAR2(10),
+  C42X27C VARCHAR2(10),
+  C42X28C VARCHAR2(10),
+  C42X29C VARCHAR2(10),
+  C42X30C VARCHAR2(10),
+  C42X31C VARCHAR2(10),
+  C42X32C VARCHAR2(10),
+  C42X33C VARCHAR2(10),
+  C42X34C VARCHAR2(10),
+  C42X35C VARCHAR2(10),
+  C42X36C VARCHAR2(10),
+  C42X37C VARCHAR2(10),
+  C42X38C VARCHAR2(10),
+  C42X39C VARCHAR2(10),
+  C42X40C VARCHAR2(10),
+  C43X01C VARCHAR2(10),
+  C43X02C VARCHAR2(10),
+  C43X03C VARCHAR2(10),
+  C43X04C VARCHAR2(10),
+  C43X05C VARCHAR2(10),
+  C43X06C VARCHAR2(10),
+  C43X07C VARCHAR2(10),
+  C43X08C VARCHAR2(10),
+  C43X09C VARCHAR2(10),
+  C43X10C VARCHAR2(10),
+  C43X11C VARCHAR2(10),
+  C43X12C VARCHAR2(10),
+  C43X13C VARCHAR2(10),
+  C43X14C VARCHAR2(10),
+  C43X15C VARCHAR2(10),
+  C43X16C VARCHAR2(10),
+  C43X17C VARCHAR2(10),
+  C43X18C VARCHAR2(10),
+  C43X19C VARCHAR2(10),
+  C43X20C VARCHAR2(10),
+  C43X21C VARCHAR2(10),
+  C43X22C VARCHAR2(10),
+  C43X23C VARCHAR2(10),
+  C43X24C VARCHAR2(10),
+  C43X25C VARCHAR2(10),
+  C43X26C VARCHAR2(10),
+  C43X27C VARCHAR2(10),
+  C43X28C VARCHAR2(10),
+  C43X29C VARCHAR2(10),
+  C43X30C VARCHAR2(10),
+  C43X31C VARCHAR2(10),
+  C43X32C VARCHAR2(10),
+  C43X33C VARCHAR2(10),
+  C43X34C VARCHAR2(10),
+  C43X35C VARCHAR2(10),
+  C43X36C VARCHAR2(10),
+  C43X37C VARCHAR2(10),
+  C43X38C VARCHAR2(10),
+  C43X39C VARCHAR2(10),
+  C43X40C VARCHAR2(10),
+  C44X01  VARCHAR2(40),
+  C44X02  VARCHAR2(40),
+  C44X03  VARCHAR2(40),
+  C44X04  VARCHAR2(40),
+  C44X05  VARCHAR2(40),
+  C44X06  VARCHAR2(40),
+  C44X07  VARCHAR2(40),
+  C44X08  VARCHAR2(40),
+  C44X09  VARCHAR2(40),
+  C44X10  VARCHAR2(40),
+  C44X11  VARCHAR2(40),
+  C44X12  VARCHAR2(40),
+  C44X13  VARCHAR2(40),
+  C44X14  VARCHAR2(40),
+  C44X15  VARCHAR2(40),
+  C44X16  VARCHAR2(40),
+  C44X17  VARCHAR2(40),
+  C44X18  VARCHAR2(40),
+  C44X19  VARCHAR2(40),
+  C44X20  VARCHAR2(40),
+  C44X21  VARCHAR2(40),
+  C44X22  VARCHAR2(40),
+  C44X23  VARCHAR2(40),
+  C44X24  VARCHAR2(40),
+  C44X25  VARCHAR2(40),
+  C44X26  VARCHAR2(40),
+  C44X27  VARCHAR2(40),
+  C44X28  VARCHAR2(40),
+  C44X29  VARCHAR2(40),
+  C44X30  VARCHAR2(40),
+  C44X31  VARCHAR2(40),
+  C44X32  VARCHAR2(40),
+  C44X33  VARCHAR2(40),
+  C44X34  VARCHAR2(40),
+  C44X35  VARCHAR2(40),
+  C44X36  VARCHAR2(40),
+  C44X37  VARCHAR2(40),
+  C44X38  VARCHAR2(40),
+  C44X39  VARCHAR2(40),
+  C44X40  VARCHAR2(40),
+  A16     NUMBER(3),
+  A18X01  NUMBER(6),
+  A18X02  NUMBER(6),
+  A18X03  NUMBER(6),
+  A18X04  NUMBER(6),
+  A18X05  NUMBER(6),
+  A17     NUMBER(6),
+  C28     NUMBER(5),
+  C29     NUMBER(2),
+  C30     NUMBER(2),
+  C31     NUMBER(5),
+  C32     NUMBER(2),
+  C33     NUMBER(2),
+  C47     NUMBER(6),
+  C48X01C VARCHAR2(2),
+  C48X02C VARCHAR2(2),
+  C48X03C VARCHAR2(2),
+  C48X04C VARCHAR2(2),
+  C48X05C VARCHAR2(2),
+  C49X01  DATE,
+  C49X02  DATE,
+  C49X03  DATE,
+  C49X04  DATE,
+  C49X05  DATE,
+  C50X01  DATE,
+  C50X02  DATE,
+  C50X03  DATE,
+  C50X04  DATE,
+  C50X05  DATE,
+  B36C    NUMBER(1),
+  B37     VARCHAR2(100),
+  B34C    VARCHAR2(1),
+  B35     VARCHAR2(100),
+  D01     NUMBER(11,2),
+  D09     NUMBER(10,2),
+  D11     NUMBER(10,2),
+  D12     NUMBER(10,2),
+  D13     NUMBER(10,2),
+  D14     NUMBER(10,2),
+  D15     NUMBER(10,2),
+  D16     NUMBER(10,2),
+  D17     NUMBER(10,2),
+  D18     NUMBER(10,2),
+  D19     NUMBER(10,2),
+  D19X01  NUMBER(10,2),
+  D20     NUMBER(10,2),
+  D20X01  NUMBER(10,2),
+  D20X02  NUMBER(10,2),
+  D21     NUMBER(10,2),
+  D22     NUMBER(10,2),
+  D23     NUMBER(10,2),
+  D23X01  NUMBER(10,2),
+  D24     NUMBER(10,2),
+  D25     NUMBER(10,2),
+  D26     NUMBER(10,2),
+  D27     NUMBER(10,2),
+  D28     NUMBER(10,2),
+  D29     NUMBER(10,2),
+  D30     NUMBER(10,2),
+  D31     NUMBER(10,2),
+  D32     NUMBER(10,2),
+  D33     NUMBER(10,2),
+  D34     NUMBER(10,2)
+)
+ON COMMIT PRESERVE ROWS;
+-- ADD COMMENTS TO THE COLUMNS 
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A01
+  IS '组织机构代码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A02
+  IS '医疗机构名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A48
+  IS '病案号';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A49
+  IS '住院次数';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B12
+  IS '入院时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B15
+  IS '出院时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A47
+  IS '健康卡号';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A46C
+  IS '医疗付费方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A11
+  IS '姓名';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A12C
+  IS '性别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A13
+  IS '出生日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A14
+  IS '年龄（岁）';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A15C
+  IS '国籍';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A21C
+  IS '婚姻';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A38C
+  IS '职业';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A19C
+  IS '民族';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A20N
+  IS '证件类别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A20
+  IS '身份证号';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A22
+  IS '出生地址';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A23C
+  IS '籍贯省（自治区、直辖市）';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A24
+  IS '户口地址';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A25C
+  IS '户口地址邮政编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A26
+  IS '现住址';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A27
+  IS '现住址电话';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A28C
+  IS '现住址邮政编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A29
+  IS '工作单位及地址';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A30
+  IS '工作单位电话';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A31C
+  IS '工作单位邮政编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A32
+  IS '联系人姓名';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A33C
+  IS '联系人关系';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A34
+  IS '联系人地址';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A35
+  IS '联系人电话';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B38
+  IS '是否为日间手术';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B11C
+  IS '入院途径';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B13C
+  IS '入院科别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B14
+  IS '入院病房';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B21C
+  IS '转科科别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B16C
+  IS '出院科别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B17
+  IS '出院病房';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B20
+  IS '实际住院（天）';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C01C
+  IS '门（急）诊诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C02N
+  IS '门（急）诊诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C03C
+  IS '出院主要诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C04N
+  IS '出院主要诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C05C
+  IS '出院主要诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X01C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X02C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X03C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X04C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X05C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X06C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X07C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X08C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X09C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X10C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X11C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X12C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X13C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X14C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X15C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X16C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X17C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X18C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X19C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X20C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X21C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X22C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X23C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X24C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X25C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X26C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X27C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X28C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X29C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X30C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X31C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X32C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X33C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X34C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X35C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X36C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X37C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X38C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X39C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C06X40C
+  IS '出院其他诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X01N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X02N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X03N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X04N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X05N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X06N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X07N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X08N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X09N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X10N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X11N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X12N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X13N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X14N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X15N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X16N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X17N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X18N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X19N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X20N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X21N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X22N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X23N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X24N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X25N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X26N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X27N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X28N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X29N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X30N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X31N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X32N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X33N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X34N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X35N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X36N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X37N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X38N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X39N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C07X40N
+  IS '出院其他诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X01C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X02C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X03C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X04C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X05C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X06C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X07C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X08C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X09C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X10C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X11C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X12C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X13C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X14C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X15C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X16C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X17C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X18C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X19C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X20C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X21C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X22C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X23C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X24C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X25C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X26C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X27C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X28C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X29C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X30C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X31C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X32C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X33C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X34C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X35C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X36C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X37C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X38C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X39C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C08X40C
+  IS '出院其他诊断入院病情';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C09C
+  IS '病理诊断编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C10N
+  IS '病理诊断名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C11
+  IS '病理号';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C12C
+  IS '损伤、中毒外部原因编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C13N
+  IS '损伤、中毒外部原因名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C24C
+  IS '有无药物过敏';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C25
+  IS '过敏药物名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B22C
+  IS '科主任执业证书编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B22
+  IS '科主任';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B23C
+  IS '主（副主）任医师执业证书编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B23
+  IS '主（副主）任医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B24C
+  IS '主治医师执业证书编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B24
+  IS '主治医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B25C
+  IS '住院医师执业证书编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B25
+  IS '住院医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B26C
+  IS '责任护士执业证书编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B26
+  IS '责任护士';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B27
+  IS '进修医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B28
+  IS '实习医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B29
+  IS '编码员';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B30C
+  IS '病案质量';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B31
+  IS '质控医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B32
+  IS '质控护师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B33
+  IS '质控日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C34C
+  IS '死亡患者尸检';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C26C
+  IS 'ABO血型';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C27C
+  IS 'Rh血型';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C14X01C
+  IS '主要手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C15X01N
+  IS '主要手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C16X01
+  IS '主要手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C17X01
+  IS '主要手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C18X01
+  IS '主要手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C19X01
+  IS '主要手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C20X01
+  IS '主要手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C21X01C
+  IS '主要手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C22X01C
+  IS '主要手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C23X01
+  IS '主要手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X01C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X02C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X03C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X04C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X05C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X06C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X07C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X08C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X09C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X10C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X11C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X12C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X13C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X14C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X15C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X16C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X17C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X18C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X19C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X20C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X21C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X22C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X23C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X24C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X25C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X26C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X27C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X28C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X29C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X30C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X31C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X32C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X33C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X34C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X35C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X36C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X37C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X38C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X39C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C35X40C
+  IS '其他手术操作编码';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X01N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X02N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X03N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X04N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X05N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X06N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X07N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X08N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X09N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X10N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X11N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X12N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X13N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X14N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X15N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X16N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X17N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X18N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X19N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X20N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X21N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X22N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X23N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X24N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X25N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X26N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X27N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X28N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X29N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X30N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X31N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X32N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X33N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X34N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X35N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X36N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X37N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X38N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X39N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C36X40N
+  IS '其他手术操作名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X01
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X02
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X03
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X04
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X05
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X06
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X07
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X08
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X09
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X10
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X11
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X12
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X13
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X14
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X15
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X16
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X17
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X18
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X19
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X20
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X21
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X22
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X23
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X24
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X25
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X26
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X27
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X28
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X29
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X30
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X31
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X32
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X33
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X34
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X35
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X36
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X37
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X38
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X39
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C37X40
+  IS '其他手术操作日期';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X01
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X02
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X03
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X04
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X05
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X06
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X07
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X08
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X09
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X10
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X11
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X12
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X13
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X14
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X15
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X16
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X17
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X18
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X19
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X20
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X21
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X22
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X23
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X24
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X25
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X26
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X27
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X28
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X29
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X30
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X31
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X32
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X33
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X34
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X35
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X36
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X37
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X38
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X39
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C38X40
+  IS '其他手术操作级别';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X01
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X02
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X03
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X04
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X05
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X06
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X07
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X08
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X09
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X10
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X11
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X12
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X13
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X14
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X15
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X16
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X17
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X18
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X19
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X20
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X21
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X22
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X23
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X24
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X25
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X26
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X27
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X28
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X29
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X30
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X31
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X32
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X33
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X34
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X35
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X36
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X37
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X38
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X39
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C39X40
+  IS '其他手术操作术者';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X01
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X02
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X03
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X04
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X05
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X06
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X07
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X08
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X09
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X10
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X11
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X12
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X13
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X14
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X15
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X16
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X17
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X18
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X19
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X20
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X21
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X22
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X23
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X24
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X25
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X26
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X27
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X28
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X29
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X30
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X31
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X32
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X33
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X34
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X35
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X36
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X37
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X38
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X39
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C40X40
+  IS '其他手术操作Ⅰ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X01
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X02
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X03
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X04
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X05
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X06
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X07
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X08
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X09
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X10
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X11
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X12
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X13
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X14
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X15
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X16
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X17
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X18
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X19
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X20
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X21
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X22
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X23
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X24
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X25
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X26
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X27
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X28
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X29
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X30
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X31
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X32
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X33
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X34
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X35
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X36
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X37
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X38
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X39
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C41X40
+  IS '其他手术操作Ⅱ助';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X01C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X02C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X03C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X04C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X05C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X06C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X07C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X08C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X09C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X10C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X11C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X12C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X13C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X14C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X15C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X16C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X17C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X18C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X19C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X20C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X21C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X22C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X23C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X24C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X25C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X26C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X27C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X28C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X29C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X30C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X31C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X32C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X33C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X34C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X35C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X36C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X37C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X38C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X39C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C42X40C
+  IS '其他手术操作切口愈合等级';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X01C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X02C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X03C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X04C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X05C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X06C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X07C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X08C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X09C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X10C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X11C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X12C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X13C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X14C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X15C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X16C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X17C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X18C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X19C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X20C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X21C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X22C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X23C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X24C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X25C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X26C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X27C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X28C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X29C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X30C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X31C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X32C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X33C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X34C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X35C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X36C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X37C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X38C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X39C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C43X40C
+  IS '其他手术操作麻醉方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X01
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X02
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X03
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X04
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X05
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X06
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X07
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X08
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X09
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X10
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X11
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X12
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X13
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X14
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X15
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X16
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X17
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X18
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X19
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X20
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X21
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X22
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X23
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X24
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X25
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X26
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X27
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X28
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X29
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X30
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X31
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X32
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X33
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X34
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X35
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X36
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X37
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X38
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X39
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C44X40
+  IS '其他手术操作麻醉医师';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A16
+  IS '年龄不足1周岁的年龄（天）';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A18X01
+  IS '新生儿出生体重(克)';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A18X02
+  IS '新生儿出生体重(克)2';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A18X03
+  IS '新生儿出生体重(克)3';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A18X04
+  IS '新生儿出生体重(克)4';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A18X05
+  IS '新生儿出生体重(克)5';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.A17
+  IS '新生儿入院体重（克）';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C28
+  IS '颅脑损伤患者入院前昏迷时间（天）';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C29
+  IS '颅脑损伤患者入院前昏迷时间(小时)';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C30
+  IS '颅脑损伤患者入院前昏迷时间(分钟)';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C31
+  IS '颅脑损伤患者入院后昏迷时间（天）';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C32
+  IS '颅脑损伤患者入院后昏迷时间(小时)';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C33
+  IS '颅脑损伤患者入院后昏迷时间(分钟)';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C47
+  IS '有创呼吸机使用时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C48X01C
+  IS '重症监护室名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C48X02C
+  IS '重症监护室名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C48X03C
+  IS '重症监护室名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C48X04C
+  IS '重症监护室名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C48X05C
+  IS '重症监护室名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C49X01
+  IS '进入时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C49X02
+  IS '进入时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C49X03
+  IS '进入时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C49X04
+  IS '进入时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C49X05
+  IS '进入时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C50X01
+  IS '退出时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C50X02
+  IS '退出时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C50X03
+  IS '退出时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C50X04
+  IS '退出时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.C50X05
+  IS '退出时间';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B36C
+  IS '是否有出院31日内再住院计划';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B37
+  IS '出院31天再住院计划目的';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B34C
+  IS '离院方式';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.B35
+  IS '医嘱转院、转社区卫生服务机构/乡镇卫生院名称';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D01
+  IS '住院总费用';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D09
+  IS '住院总费用其中自付金额';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D11
+  IS '1.一般医疗服务费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D12
+  IS '2.一般治疗操作费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D13
+  IS '3.护理费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D14
+  IS '4.综合医疗服务类其他费用';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D15
+  IS '5.病理诊断费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D16
+  IS '6.实验室诊断费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D17
+  IS '7.影像学诊断费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D18
+  IS '8.临床诊断项目费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D19
+  IS '9.非手术治疗项目费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D19X01
+  IS '其中：临床物理治疗费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D20
+  IS '10.手术治疗费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D20X01
+  IS '其中：麻醉费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D20X02
+  IS '其中：手术费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D21
+  IS '11.康复费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D22
+  IS '12.中医治疗费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D23
+  IS '13.西药费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D23X01
+  IS '其中：抗菌药物费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D24
+  IS '14.中成药费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D25
+  IS '15.中草药费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D26
+  IS '16.血费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D27
+  IS '17.白蛋白类制品费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D28
+  IS '18.球蛋白类制品费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D29
+  IS '19.凝血因子类制品费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D30
+  IS '20.细胞因子类制品费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D31
+  IS '21.检查用一次性医用材料费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D32
+  IS '22.治疗用一次性医用材料费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D33
+  IS '23.手术用一次性医用材料费';
+COMMENT ON COLUMN 临时表_病案首页西医_绩效考核.D34
+  IS '24.其他费：';

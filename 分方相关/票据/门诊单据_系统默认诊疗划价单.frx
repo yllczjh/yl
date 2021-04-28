@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="02/24/2018 11:38:29" ReportInfo.Modified="08/11/2020 08:57:39" ReportInfo.CreatorVersion="2017.1.16.0" PrintSettings.ShowDialog="false">
+  <ScriptText>using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Windows.Forms;
+using System.Drawing;
+using System.Data;
+using FastReport;
+using FastReport.Data;
+using FastReport.Dialog;
+using FastReport.Barcode;
+using FastReport.Table;
+using FastReport.Utils;
+
+namespace FastReport
+{
+  public class ReportScript
+  {
+    int int_flat=0;
+    private void Cell21_AfterData(object sender, EventArgs e)
+    {
+      if(int_flat&gt;0)
+      {
+        (sender as TableCell).Text=&quot;&quot;;
+      }
+      int_flat=int_flat+1; 
+    }
+    private void Line5_Beforeprint(object sender,EventArgs e)
+    {
+        Line5.Left=Line5.Left-(float)(((float)int_flat)*19);
+    }
+  }
+}
+</ScriptText>
+  <Dictionary>
+    <TableDataSource Name="门诊处方单" ReferenceName="Data.门诊处方单" DataType="System.Int32" Enabled="true">
+      <Column Name="门诊病历号" DataType="System.String"/>
+      <Column Name="机构名称" DataType="System.String"/>
+      <Column Name="医嘱号" DataType="System.String"/>
+      <Column Name="科室名称" DataType="System.String"/>
+      <Column Name="病人姓名" DataType="System.String"/>
+      <Column Name="打印时间" DataType="System.String"/>
+      <Column Name="病人年龄" DataType="System.String"/>
+      <Column Name="病人类型" DataType="System.String"/>
+      <Column Name="医保卡号" DataType="System.String"/>
+      <Column Name="诊断" DataType="System.String"/>
+      <Column Name="地址" DataType="System.String"/>
+      <Column Name="手机号码" DataType="System.String"/>
+      <Column Name="项目名称" DataType="System.String"/>
+      <Column Name="医嘱内容" DataType="System.String"/>
+      <Column Name="规格" DataType="System.String"/>
+      <Column Name="规格及总量" DataType="System.String"/>
+      <Column Name="用量" DataType="System.String"/>
+      <Column Name="频率" DataType="System.String"/>
+      <Column Name="用法名称" DataType="System.String"/>
+      <Column Name="操作员姓名" DataType="System.String"/>
+      <Column Name="单价" DataType="System.Decimal"/>
+      <Column Name="总量" DataType="System.Decimal"/>
+      <Column Name="单位名称" DataType="System.String"/>
+      <Column Name="总金额" DataType="System.Decimal"/>
+      <Column Name="开发医生姓名" DataType="System.String"/>
+      <Column Name="病人性别" DataType="System.String"/>
+      <Column Name="总数量" DataType="System.String"/>
+      <Column Name="组线" DataType="System.String"/>
+      <Column Name="处方序号" DataType="System.String"/>
+      <Column Name="小类编码" DataType="System.String"/>
+      <Column Name="医生嘱托" DataType="System.String"/>
+      <Column Name="组号" DataType="System.Decimal"/>
+      <Column Name="总费用" DataType="System.Decimal"/>
+      <Column Name="唯一号" DataType="System.String"/>
+      <Column Name="天数" DataType="System.String"/>
+      <Column Name="排序组号" DataType="System.Int32"/>
+      <Column Name="处方显示类型" DataType="System.String"/>
+      <Column Name="处方说明" DataType="System.String"/>
+      <Column Name="身份证号" DataType="System.String"/>
+      <Column Name="毒麻类型" DataType="System.String"/>
+    </TableDataSource>
+    <Total Name="Total" Expression="[门诊处方单.总金额]" Evaluator="Data1"/>
+  </Dictionary>
+  <ReportPage Name="Page1" PaperWidth="148.1" PaperHeight="210.1" RawPaperSize="11" Guides="0,0,0">
+    <ReportTitleBand Name="ReportTitle1" Width="484.22" Height="226.8">
+      <TextObject Name="Text1" Left="4.9" Top="18.9" Width="368.55" Height="28.35" Text="[门诊处方单.机构名称]门诊划价单" HorzAlign="Center" VertAlign="Center" Font="宋体, 16pt, style=Bold"/>
+      <TextObject Name="Text2" Left="382.9" Top="9.45" Width="85.05" Height="37.8" Border.Lines="All" Text="[门诊处方单.处方显示类型]" HorzAlign="Center" VertAlign="Center" Font="宋体, 16pt, style=Bold"/>
+      <TextObject Name="Text3" Left="4.9" Top="66.15" Width="557.55" Height="18.9" Text="地址:[门诊处方单.地址]" VertAlign="Center"/>
+      <TextObject Name="Text4" Left="354.55" Top="66.15" Width="47.25" Height="18.9" Text="门诊" HorzAlign="Center" VertAlign="Center"/>
+      <LineObject Name="Line1" Left="4.9" Top="85.05" Width="472.5"/>
+      <LineObject Name="Line2" Left="4.9" Top="85.05" Height="141.75"/>
+      <LineObject Name="Line3" Left="478.4" Top="85.05" Height="141.75"/>
+      <TextObject Name="Text5" Left="4.9" Top="94.5" Width="113.4" Height="18.9" Text="姓名:[门诊处方单.病人姓名]" VertAlign="Center"/>
+      <TextObject Name="Text6" Left="118.3" Top="94.5" Width="94.5" Height="18.9" Text="性别:[门诊处方单.病人性别]" VertAlign="Center"/>
+      <TextObject Name="Text7" Left="212.8" Top="94.5" Width="94.5" Height="18.9" Text="年龄:[门诊处方单.病人年龄]" VertAlign="Center"/>
+      <TextObject Name="Text8" Left="4.9" Top="122.85" Width="113.4" Height="18.9" Text="开单科室:[门诊处方单.科室名称]" VertAlign="Center"/>
+      <TextObject Name="Text9" Left="307.3" Top="94.5" Width="170.1" Height="18.9" Text="医疗证号:[门诊处方单.医保卡号]" VertAlign="Center"/>
+      <TextObject Name="Text10" Left="118.3" Top="122.85" Width="94.5" Height="18.9" Text="医疗类别:[门诊处方单.病人类型]" VertAlign="Center"/>
+      <TextObject Name="Text11" Left="4.9" Top="151.2" Width="207.9" Height="18.9" Text="开单日期:[门诊处方单.打印时间]" VertAlign="Center"/>
+      <TextObject Name="Text12" Left="212.8" Top="151.2" Width="264.6" Height="37.8" Text="临床诊断:[门诊处方单.诊断]"/>
+      <TextObject Name="Text13" Left="212.8" Top="122.85" Width="103.95" Height="18.9" Text="处方序号:[门诊处方单.处方序号]" VertAlign="Center"/>
+      <ShapeObject Left="4" Top="189" Width="472.5" Height="3.78" Fill.Color="Black"/>
+      <TextObject Name="Text21" Left="316.75" Top="122.85" Width="160.65" Height="18.9" Text="门诊病历号:[门诊处方单.门诊病历号]" VertAlign="Center"/>
+      <TextObject Name="Text18" Left="13.9" Top="207.9" Width="198.45" Height="18.9" Text="项目名称" VertAlign="Center"/>
+      <TextObject Name="Text22" Left="217.35" Top="207.9" Width="75.6" Height="18.9" Text="单价" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text24" Left="302.4" Top="207.9" Width="56.7" Height="18.9" Text="数量" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text25" Left="359.1" Top="207.9" Width="47.25" Height="18.9" Text="单位" HorzAlign="Center" VertAlign="Center"/>
+      <TextObject Name="Text26" Left="415.8" Top="207.9" Width="56.7" Height="18.9" Text="总金额" HorzAlign="Center" VertAlign="Center"/>
+    </ReportTitleBand>
+    <DataBand Name="Data1" Top="230.8" Width="484.22" Height="28.35" DataSource="门诊处方单">
+      <TableObject Name="Table2" Left="5.35" Width="470.83" Height="28.35">
+        <TableColumn Name="Column11" Width="213.15"/>
+        <TableColumn Name="Column12" Width="78.13"/>
+        <TableColumn Name="Column13" Width="58.59"/>
+        <TableColumn Name="Column14" Width="58.59"/>
+        <TableColumn Name="Column31" Width="62.37"/>
+        <TableRow Name="Row2" Height="28.35">
+          <TableCell Name="Cell11" Border.Lines="Left" Text=" [门诊处方单.项目名称]" VertAlign="Center"/>
+          <TableCell Name="Cell12" Text="[门诊处方单.单价]" HorzAlign="Center" VertAlign="Center"/>
+          <TableCell Name="Cell13" Text="[门诊处方单.总数量]" HorzAlign="Center" VertAlign="Center"/>
+          <TableCell Name="Cell32" Text="[门诊处方单.单位名称]" HorzAlign="Center" VertAlign="Center"/>
+          <TableCell Name="Cell33" Text="[门诊处方单.总金额]" HorzAlign="Center" VertAlign="Center"/>
+        </TableRow>
+      </TableObject>
+      <LineObject Name="Line4" Left="477.95" Height="28.35"/>
+      <DataFooterBand Name="DataFooter1" Top="295.5" Width="484.22">
+        <LineObject Name="Line6" Left="4.9" Width="472.5"/>
+        <ChildBand Name="Child1" Top="263.15" Width="484.22" Height="28.35" FillUnusedSpace="true">
+          <TableObject Name="Table3" Left="4.9" Width="472.78" Height="28.35">
+            <TableColumn Name="Column21" Width="139.99"/>
+            <TableColumn Name="Column22" Width="83.33"/>
+            <TableColumn Name="Column23" Width="26.6"/>
+            <TableColumn Name="Column24" Width="17.13"/>
+            <TableColumn Name="Column25" Width="17.13"/>
+            <TableColumn Name="Column26" Width="21.09"/>
+            <TableColumn Name="Column27" Width="46.6"/>
+            <TableColumn Name="Column28" Width="56.08"/>
+            <TableColumn Name="Column29" Width="18.23"/>
+            <TableColumn Name="Column30" Width="46.6"/>
+            <TableRow Name="Row3" Height="28.35">
+              <TableCell Name="Cell21" Border.Lines="Left, Right" AfterDataEvent="Cell21_AfterData" HorzAlign="Center" VertAlign="Center" Font="宋体, 9pt, style=Bold" ColSpan="10">
+                <LineObject Name="Line5" Left="311.85" Width="-18.9" Height="28.35" BeforePrintEvent="Line5_Beforeprint" Diagonal="true"/>
+              </TableCell>
+              <TableCell Name="Cell22" AfterDataEvent="Cell22_AfterData" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell23" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell24" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell25" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell26" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell27" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell28" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell29" HorzAlign="Center" VertAlign="Center"/>
+              <TableCell Name="Cell30" Border.Lines="Right" HorzAlign="Center" VertAlign="Center"/>
+            </TableRow>
+          </TableObject>
+        </ChildBand>
+      </DataFooterBand>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="299.5" Width="484.22" Height="18.9" Guides="0">
+      <TextObject Name="Text14" Left="4.9" Width="113.4" Height="18.9" Text="医生：" VertAlign="Center"/>
+      <TextObject Name="Text17" Left="302.4" Width="168.35" Height="18.9" Text="金额合计：[Total]" VertAlign="Center"/>
+      <TextObject Name="Text19" Left="184.45" Width="85.05" Height="18.9" Text="收费员:" VertAlign="Center"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>

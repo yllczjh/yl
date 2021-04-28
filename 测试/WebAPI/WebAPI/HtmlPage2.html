@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="scripts/jquery-3.3.1.js"></script>
+	<script>
+        //$.ajax({
+        //    url: "api/Main",
+        //    type:"get"
+        //}).done(function (data) {
+        //    console.log(data);
+        //})
+
+        //$.ajax({
+        //    url: "api/Main/bbb",
+        //    type: "post",
+        //    data: {
+        //        id: "1"
+        //    }
+        //}).done(function (data) {
+        //    console.log(data);
+        //})
+        //$.ajax({
+        //    url: "api/Main/bbb",
+        //    type: "post",
+        //    data: {
+        //        id:"1"
+        //    }
+        //}).done(function (data) {
+        //    console.log(data);
+        //})
+
+        //$.ajax({
+        //    url: "api/v1/Main/bbb",
+        //    type: "post",
+        //    headers: { msgid: guid(),userid:"user1",token:"12345",code:"1001",sign:"" },
+        //    data: JSON.stringify({ id: "a" }),
+        //    contentType: "application/json;charset=utf-8",
+        //    dataType:"text"
+        //}).done(function (data) {
+        //    console.log(data);
+        //})
+
+        //$.ajax({
+        //    url: "api/v1/Main/Token/1",
+        //    type: "post",
+        //    headers: { msgid: guid(), customid: "wx15f7a5e149460ffb", clienttype: "wx", token: "123455", code: "1002", sign: "" },
+        //    //data: JSON.stringify({ "datacount": 2, "dataset": [{ "单据编号": "123", "客户编码": "123", "rowcount": 2, "datadetail": [{ "产品编号": "123", "数量": 10 }, { "产品编号": "456", "数量": 12 }] }, { "单据编号": "456", "客户编码": "122", "rowcount": 1, "datadetail": [{ "产品编号": "123", "数量": 10 }] }] }),
+        //    contentType: "application/json;charset=utf-8",
+        //    data: "{ \"datacount\": 2, \"dataset\": [{ \"单据编号\": \"123\", \"客户编码\": \"123\", \"rowcount\": 2, \"datadetail\": [{ \"产品编号\": \"123\", \"数量\": 10 }, { \"产品编号\": \"456\", \"数量\": 12 }] }, { \"单据编号\": \"456\", \"客户编码\": \"122\", \"rowcount\": 1, \"datadetail\": [{ \"产品编号\": \"123\", \"数量\": 10 }] }] }",
+
+        //    dataType: "text"
+        //}).done(function (data) {
+        //    console.log(data);
+        //})
+
+        $.ajax({
+            url: "api/v1/Main/Token/1",
+            type: "post",
+            headers: { msgid: guid(), token: "123455", code: "1002", sign: "", customid: "wx15f7a5e149460ffb", clienttype: "wx" },
+            //data: JSON.stringify({ "datacount": 2, "dataset": [{ "单据编号": "123", "客户编码": "123", "rowcount": 2, "datadetail": [{ "产品编号": "123", "数量": 10 }, { "产品编号": "456", "数量": 12 }] }, { "单据编号": "456", "客户编码": "122", "rowcount": 1, "datadetail": [{ "产品编号": "123", "数量": 10 }] }] }),
+            contentType: "application/json;charset=utf-8",
+            data: "{ \"datacount\": 2, \"dataset\": [{ \"单据编号\": \"123\", \"客户编码\": \"123\", \"rowcount\": 2, \"datadetail\": [{ \"产品编号\": \"123\", \"数量\": 10 }, { \"产品编号\": \"456\", \"数量\": 12 }] }, { \"单据编号\": \"456\", \"客户编码\": \"122\", \"rowcount\": 1, \"datadetail\": [{ \"产品编号\": \"123\", \"数量\": 10 }] }] }",
+
+            dataType: "text"
+        }).done(function (data) {
+            console.log(data);
+        })
+
+        
+        function S4() { 
+            return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+        }; 
+        // Generate a pseudo-GUID by concatenating random hexadecimal. 
+        function guid() {
+            return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

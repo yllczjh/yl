@@ -1,0 +1,54 @@
+select k.科室编码,k.科室名称,
+成药处方数,草药处方数,中药颗粒处方数,
+就诊人次, 成药处方金额,草药处方金额,中药颗粒处方金额,处方金额,
+case when 就诊人次=0 then 0 else round((成药处方数+草药处方数+中药颗粒处方数)/就诊人次,4) end as 中药处方总数占比,
+case when 就诊人次=0 then 0 else round((草药处方数+中药颗粒处方数)/就诊人次,4) end as 饮片颗粒处方数占比,
+case when 处方金额=0 then 0 else round((草药处方金额+中药颗粒处方金额)/处方金额,4) end as 饮片颗粒药占比
+ from 基础项目_科室资料 k 
+left join (
+select aa.机构编码,aa.开方科室编码,
+sum(aa.成药处方金额) as 成药处方金额,
+sum(aa.草药处方金额) as 草药处方金额,
+sum(aa.中药颗粒处方金额) as 中药颗粒处方金额,
+sum(aa.处方金额) as 处方金额
+ from (
+select t.机构编码,t.挂号序号,t.开方科室编码,
+decode(b.小类名称,'成药',sum(t.总金额),0) as 成药处方金额,
+decode(b.小类名称,'草药',sum(t.总金额),0) as 草药处方金额,
+decode(b.小类名称,'中药颗粒',sum(t.总金额),0) as 中药颗粒处方金额,
+sum(t.总金额) as 处方金额
+                            
+ from 门诊管理_门诊处方 t
+ inner join 基础项目_小类字典 b on t.机构编码=b.机构编码 and t.大类编码=b.大类编码 and t.小类编码=b.小类编码
+ where t.机构编码=@机构编码 and t.收费时间 between :参数1 and :参数2
+group by t.机构编码, t.挂号序号, t.开方科室编码,b.小类名称
+) aa
+group by 机构编码, 开方科室编码) aaa on k.机构编码=aaa.机构编码 and k.科室编码=aaa.开方科室编码
+left join
+(
+select bb.机构编码,bb.开方科室编码,sum(成药处方) as 成药处方数,sum(草药处方) as 草药处方数,sum(中药颗粒处方) as 中药颗粒处方数 from (
+select a.机构编码,a.开方科室编码,a.病人id,a.门诊病历号,a.大类编码,a.小类编码,a.处方序号,b.小类名称,
+decode(b.小类名称,'成药',1,0) as 成药处方,
+decode(b.小类名称,'草药',1,0) as 草药处方,
+decode(b.小类名称,'中药颗粒',1,0) as 中药颗粒处方
+ from 门诊管理_门诊医嘱 a 
+ inner join 基础项目_小类字典 b on a.机构编码=b.机构编码 and a.大类编码=b.大类编码 and a.小类编码=b.小类编码
+where a.收费状态 not in ('已退费','发送未收费')
+ and a.机构编码=@机构编码 and a.录入时间 between :参数1 and :参数2) bb
+group by 机构编码,开方科室编码) bbb on k.机构编码=bbb.机构编码 and k.科室编码=bbb.开方科室编码
+left join (
+select cc.机构编码,cc.开方科室编码,sum(cc.收费人次) as 就诊人次
+ from (
+select t.机构编码,t.发票序号,t.开方科室编码,
+               case when sum(数量) > 0 then 1 
+                 --when sum(数量) < 0 then -1
+                              else
+                               0
+                            end 收费人次
+                            
+ from 门诊管理_门诊处方 t
+ where t.机构编码=@机构编码 and t.收费时间 between :参数1 and :参数2
+group by t.机构编码, t.发票序号, t.开方科室编码
+) cc
+group by 机构编码, 开方科室编码) ccc on k.机构编码=ccc.机构编码 and k.科室编码=ccc.开方科室编码
+where aaa.机构编码 is not null or bbb.机构编码 is not null

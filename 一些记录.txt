@@ -1,0 +1,85 @@
+
+47.104.4.221:9900/ykey-cloudhis
+47.104.4.221:9900/dev-hldfy
+
+
+
+季报
+网址：http://218.60.146.118:8080/webPage/esmain/portal/portal.do?id=XMH2
+210804464164003
+7035104abc
+
+
+流感、发热上报
+https://flu.hqms.org.cn/login.jsp
+u893470
+zx123456
+
+
+
+https://gitlab.syyyhl.com/users/sign_in
+yanglei@syyyhl.com
+
+
+https://github.com/
+1245650958@qq.com
+
+
+https://pms.syyyhl.com/zentao/project-index-no.html
+yanglei_YLlc49783258
+
+
+
+----------------------------------------
+192.168.100.30/172.21.100.201
+administrator
+pQ5HLwDVG@
+
+电子结算清单上报
+192.168.100.50
+administrator
+pQ5HLwDVG@
+--------------------------------------
+二院 641915031/6300836
+
+葫芦岛妇幼 446404341/1234
+
+营口妇幼 217858066/60HUPx/957242900
+-------------------------------------
+12320服务器
+172.21.100.201
+jump02
+pQ5HLwDVG@
+
+在远程 192.168.100.41 42
+administrator pQ5HLwDVG@
+------------------------------------
+
+葫芦岛妇幼
+程序 10.10.10.2
+数据库 10.10.100.15/orcl hldfy/hldfy
+
+--------------------------------------
+葫芦岛妇幼网上预约测试
+服务器远程桌面
+42.180.49.140
+账号administrator
+密码Fybjy.2033133
+
+数据库
+10.10.10.7/test   @hldfy/hldfy
+
+administrator/123456
+--------------------------------------
+外网服务器
+47.104.4.221:4389
+administrator
+abcd1243..
+
+
+
+http://test7.ql-soft.com/HtmlPage2.html
+
+msconfig
+ 
+

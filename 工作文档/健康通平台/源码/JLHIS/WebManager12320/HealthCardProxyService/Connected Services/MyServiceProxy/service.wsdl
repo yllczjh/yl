@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HealthCardWcfService" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HisCommon.DataEntity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_StopReg_InputMessage">
+    <wsdl:part name="parameters" element="tns:StopReg" />
+  </wsdl:message>
+  <wsdl:message name="IService1_StopReg_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StopRegResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CancelRegByHis_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelRegByHis" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CancelRegByHis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelRegByHisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefundByHis_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefundByHis" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefundByHis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefundByHisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrintRegByHis_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrintRegByHis" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrintRegByHis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrintRegByHisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PayRegByHis_InputMessage">
+    <wsdl:part name="parameters" element="tns:PayRegByHis" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PayRegByHis_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PayRegByHisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_QueryRegRefund_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryRegRefund" />
+  </wsdl:message>
+  <wsdl:message name="IService1_QueryRegRefund_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryRegRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefundPay_InputMessage">
+    <wsdl:part name="parameters" element="tns:RefundPay" />
+  </wsdl:message>
+  <wsdl:message name="IService1_RefundPay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RefundPayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_QueryPayRefund_InputMessage">
+    <wsdl:part name="parameters" element="tns:QueryPayRefund" />
+  </wsdl:message>
+  <wsdl:message name="IService1_QueryPayRefund_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QueryPayRefundResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PushInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:PushInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PushInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PushInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StopReg">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/StopReg" message="tns:IService1_StopReg_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/StopRegResponse" message="tns:IService1_StopReg_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelRegByHis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CancelRegByHis" message="tns:IService1_CancelRegByHis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CancelRegByHisResponse" message="tns:IService1_CancelRegByHis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefundByHis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RefundByHis" message="tns:IService1_RefundByHis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RefundByHisResponse" message="tns:IService1_RefundByHis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrintRegByHis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PrintRegByHis" message="tns:IService1_PrintRegByHis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PrintRegByHisResponse" message="tns:IService1_PrintRegByHis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PayRegByHis">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PayRegByHis" message="tns:IService1_PayRegByHis_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PayRegByHisResponse" message="tns:IService1_PayRegByHis_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryRegRefund">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/QueryRegRefund" message="tns:IService1_QueryRegRefund_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/QueryRegRefundResponse" message="tns:IService1_QueryRegRefund_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RefundPay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/RefundPay" message="tns:IService1_RefundPay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RefundPayResponse" message="tns:IService1_RefundPay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QueryPayRefund">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/QueryPayRefund" message="tns:IService1_QueryPayRefund_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/QueryPayRefundResponse" message="tns:IService1_QueryPayRefund_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PushInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/PushInfo" message="tns:IService1_PushInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/PushInfoResponse" message="tns:IService1_PushInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopReg">
+      <soap:operation soapAction="http://tempuri.org/IService1/StopReg" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelRegByHis">
+      <soap:operation soapAction="http://tempuri.org/IService1/CancelRegByHis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundByHis">
+      <soap:operation soapAction="http://tempuri.org/IService1/RefundByHis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrintRegByHis">
+      <soap:operation soapAction="http://tempuri.org/IService1/PrintRegByHis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PayRegByHis">
+      <soap:operation soapAction="http://tempuri.org/IService1/PayRegByHis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryRegRefund">
+      <soap:operation soapAction="http://tempuri.org/IService1/QueryRegRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RefundPay">
+      <soap:operation soapAction="http://tempuri.org/IService1/RefundPay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QueryPayRefund">
+      <soap:operation soapAction="http://tempuri.org/IService1/QueryPayRefund" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PushInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/PushInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/HealthCardWcfService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

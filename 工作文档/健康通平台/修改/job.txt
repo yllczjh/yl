@@ -1,0 +1,8 @@
+begin
+  sys.dbms_job.submit(job => :job,
+                      what => 'PRC_门诊管理_自动生成门诊排班;',
+                      next_date => to_date('30-06-2020', 'dd-mm-yyyy'),
+                      interval => 'trunc(sysdate)+1');
+  commit;
+end;
+/

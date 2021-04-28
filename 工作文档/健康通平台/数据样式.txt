@@ -1,0 +1,60 @@
+
+DBMS_OUTPUT.ENABLE(buffer_size=>null);
+ 
+dbms_output.put_line(:LOB_响应参数);
+dbms_lob.freetemporary(:LOB_响应参数);
+
+
+
+select * from zfgl_zflxpz;
+select * from 基础项目_字典明细 t where t.分类编码='GB_ZFLX_001';
+
+
+
+
+select t.*, t.rowid from 互联互通_用户信息 t;
+
+select t.*, t.rowid from 互联互通_订单 t where trunc(t.订单时间)=trunc(sysdate) order by t.医院订单号;
+
+select t.*, t.rowid from 互联互通_订单明细 t where t.订单号 = '202007160020';
+
+select t.*, t.rowid from 门诊管理_预约挂号 t where t.主键id='647';
+
+select t.*, t.rowid from 门诊管理_挂号登记 t where t.门诊病历号='2020028493';
+
+select t.*, t.rowid from 财务管理_收支款 t order by t.收费时间 desc;
+
+select t.*, t.rowid from 基础项目_病人信息 t where t.病人id='0000024772';
+
+select t.*, t.rowid from 基础项目_病人信息_其他 t where t.病人id='0000024772';
+
+select t.*, t.rowid from 门诊管理_当天排班记录 t where t.排班日期=trunc(sysdate);
+
+select t.*, t.rowid from 门诊管理_日排班时段表 t where t.记录ID='6F63B7086FD94FE79E43AE375388A612';
+
+
+
+select  t.*, t.rowid   from 门诊管理_挂号登记 t where t.门诊病历号='2020028571'
+
+select  t.*, t.rowid   from 门诊管理_门诊发票登记 t  where t.门诊病历号='2020028571'
+
+select  t.*, t.rowid   from 财务管理_收支款 t where t.挂号序号='TY00000000000000029768'
+
+select  t.*, t.rowid  from 门诊管理_门诊处方 t  where trunc(t.收费时间)=trunc(sysdate) and t.门诊病历号='2020028571'
+
+select  t.*, t.rowid  from 门诊管理_门诊医嘱明细 t where trunc(t.生成时间)=trunc(sysdate) and t.门诊病历号='2020028571'
+
+select  t.*, t.rowid  from 门诊管理_门诊医嘱计价 t  where t.门诊病历号='2020028571'
+
+select  t.*, t.rowid  from 门诊管理_门诊医嘱项目 t  where t.门诊病历号='2020028571'
+
+select  t.*, t.rowid  from 门诊管理_门诊医嘱 t where t.门诊病历号='2020028571'
+
+
+
+
+
+
+
+delete from 门诊管理_当天排班记录;
+delete from 门诊管理_日排班时段表;

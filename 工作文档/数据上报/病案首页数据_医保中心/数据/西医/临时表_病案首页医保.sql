@@ -1,0 +1,1 @@
+alter table 临时表_病案首页医保 modify  IDC varchar2(20);

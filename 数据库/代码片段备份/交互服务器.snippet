@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets >
+    <CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_调服务器</Title>
+            <Shortcut>sss_调服务器</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			InObj.Clear();
+            InObj.Clear();
+            try
+            {
+                InObj.p0 = C_系统信息.Em_模块名称.HIS_基础管理.ToString();
+                InObj.p1 = C_全局变量_共享.P_机构编码;
+                InObj.p2 = "M_获取门诊当天排班信息记录";
+                InObj.p3 = str_日期;
+                InObj.p4 = WcfHelper.DataTableToStr(dt_单据明细新, "", true);;
+                InObj.p5 = C_全局变量_共享.P_机构编码 + "~" + dr2["归还单号"].ToString() + "~" + dr2["资产编码"].ToString() + "~|";
+                InObj.p6 = C_机构参数.C_门诊管理.P_门诊是否启用排班管理;
+
+                OutObj = ClientLib.ExceWcf(C_全局变量_共享.P_通信方式, InObj);
+                if (OutObj.p1 == "1")
+                {
+                    dt = WcfHelper.StrToDataTable(null, OutObj.p3, true);
+					//dt =WcfHelper.StreamToDataTable(ClientLib.ExceWcfStream(C_全局变量_共享.P_通信方式, InObj), true);
+                }
+                else
+                {
+                    MessageBox.Show(OutObj.p2, "提示");
+                    return;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "提示");
+            }
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_查询单个值</Title>
+            <Shortcut>sss_查询单个值</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			string strSql = " select NVL(max(to_number(项目编码)),0) + 1 as maxrow from 病案管理_项目信息 where 机构编码 = '" + str_机构编码 + "'";
+			Db_Common.rtnvalues Rtn = new Db_Common.rtnvalues();
+			Rtn = dbhelper.QueryValues(strSql);
+
+			if (!string.IsNullOrEmpty(Rtn.arg0))
+			{
+				str_项目编码 = Rtn.arg0;
+			}
+			else
+			{
+				OutObj.p1 = "0";
+				OutObj.p2 = "产生项目编码失败";
+				return OutObj;
+			}
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_查询DataTable</Title>
+            <Shortcut>sss_查询DataTable</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			try
+            {
+                Db_Common.InParameter[] InVal = new Db_Common.InParameter[1];
+
+                string sql = @"select * from 病案管理_项目字典分类 where 机构编码=:机构编码 and 有效状态='1'";
+
+                InVal[0].name = ":机构编码";
+                InVal[0].dbType = DbType.String;
+                InVal[0].value = InObj.p1;
+
+                DataTable dt_返回表 = dbhelper.Retrieve(CommandType.Text, sql, InVal, "项目字典分类").Tables[0];
+
+                OutObj.p1 = "1";
+                OutObj.p2 = "ok";
+                OutObj.p3 = WcfHelper.DataTableToStr(dt_返回表, "", true);
+            }
+            catch (Exception ex)
+            {
+                OutObj.p1 = "0";
+                OutObj.p2 = ex.Message;
+                OutObj.p3 = "";
+            }
+
+            return OutObj;
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_更新或插入</Title>
+            <Shortcut>sss_更新或插入</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			try
+            {
+                string str_机构编码 = InObj.p1;
+                string str_项目编码 = InObj.p3;
+                string str_人员编码 = InObj.p4;
+                string strSql = @"update 病案管理_项目字段对照 set 
+                                                确认标志='已确认',
+                                                更新时间=to_date(to_char(sysdate,'yyyy-MM-dd hh24:mi:ss'),'yyyy-MM-dd hh24:mi:ss'),
+                                                更新人员=:更新人员 
+                                          where 机构编码=:机构编码 
+                                            and 项目编码=:项目编码";
+
+                Db_Common.InParameter[] InVal = new Db_Common.InParameter[3];
+                InVal[0].name = ":更新人员";
+                InVal[0].dbType = DbType.String;
+                InVal[0].value = str_人员编码;
+
+                InVal[1].name = ":机构编码";
+                InVal[1].dbType = DbType.String;
+                InVal[1].value = str_机构编码;
+
+                InVal[2].name = ":项目编码";
+                InVal[2].dbType = DbType.String;
+                InVal[2].value = str_项目编码;
+
+                int i_返回值 = dbhelper.Update(strSql, InVal);
+                if (i_返回值 > 0)
+                {
+                    OutObj.p1 = "1";
+                    OutObj.p2 = "ok";
+                }else
+                {
+                    OutObj.p1 = "0";
+                    OutObj.p2 = "确认失败";
+                }
+            }
+            catch (Exception ex)
+            {
+                OutObj.p1 = "0";
+                OutObj.p2 = ex.Message;
+                OutObj.p3 = "";
+            }
+            return OutObj;
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_执行多条语句</Title>
+            <Shortcut>sss_执行多条语句</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			string[] arr_sql参数 = new string[2];
+            string[] arr_sql语句 = new string[2];
+
+            arr_sql语句[0] = @"delete 病案管理_项目字段对照 where 机构编码 =:机构编码 and 项目编码=:项目编码";
+            arr_sql参数[0] = "机构编码,项目编码##" + InObj.p4;
+
+            arr_sql语句[1] = @"insert into 病案管理_项目字段对照(
+		                                    机构编码, 项目编码,     序号,     项目字段名,  系统字段名,     字段说明,   是否显示,   显示名称,   显示顺序,              是否为字典,   字典分类,    是否默认值,   默认值,  更新时间,     更新人员,     有效状态,     确认标志)
+		                            values(:机构编码,:项目编码,    :序号,    :项目字段名, :系统字段名,    :字段说明,  :是否显示,  :显示名称,  to_number(:显示顺序),  :是否为字典,  :字典分类,   :是否默认值,  :默认值,  to_date(:更新时间,'yyyy-MM-dd hh24:mi:ss'), :更新人员, :有效状态,:确认标志)";
+            arr_sql参数[1] = InObj.p3;
+
+            try
+            {
+                dbhelper.ExecuteBatch(arr_sql语句, arr_sql参数);
+                OutObj.p1 = "1";
+                OutObj.p2 = "ok";
+            }
+            catch (Exception ex)
+            {
+                OutObj.p1 = "0";
+                OutObj.p2 = ex.Message;
+            }
+
+            return OutObj;
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_SQL返回流</Title>
+            <Shortcut>sss_SQL返回流</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			string str_sql = @"select *
+                               from 门诊管理_病历单个模板
+                               where 机构编码 = '" + str_机构编码 + @"'";
+
+            try
+            {
+                DataTable dt_模板列表 = dbhelper.Retrieve(CommandType.Text, str_sql, "病历模板列表").Tables[0];
+                string str_数据集数据 = WcfHelper.DataTableToStr(dt_模板列表, "", true);
+
+                StringWriter sw_架构字符流 = new StringWriter();
+                dt_模板列表.WriteXmlSchema(sw_架构字符流);
+                sw_架构字符流.Close();
+
+                string str_数据集结构 = sw_架构字符流.ToString();
+
+                str_数据集数据 = str_数据集结构 + "@@" + str_数据集数据;
+                ZipHelper zip = new ZipHelper();
+                return zip.GZipCompress(str_数据集数据);
+            }
+            catch
+            {
+                return null;
+            }
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_存储过程返回流</Title>
+            <Shortcut>sss_存储过程返回流</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			try
+            {
+                OracleParameter[] pra = new OracleParameter[] {
+                    new OracleParameter("str_参数",OracleType.VarChar,500),
+                    new OracleParameter("cur_导出_列表信息",OracleType.Cursor)
+                };
+
+                pra[0].Direction = ParameterDirection.Input;
+                pra[0].Value = InObj.p1 + "|" + InObj.p3;
+                pra[1].Direction = ParameterDirection.Output;
+
+                DataTable ds_源 = dbhelper.RunProcedure("存储过程名", pra, "-1").Tables[0];
+
+                string str_数据集数据 = WcfHelper.DataTableToStr(ds_源, "", true);
+
+                StringWriter sw_架构字符流 = new StringWriter();
+                ds_源.WriteXmlSchema(sw_架构字符流);
+                sw_架构字符流.Close();
+
+                string str_数据集结构 = sw_架构字符流.ToString();
+
+                str_数据集数据 = str_数据集结构 + "@@" + str_数据集数据;
+                ZipHelper zip = new ZipHelper();
+                return zip.GZipCompress(str_数据集数据);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+	
+	<CodeSnippet Format="1.0.0">
+        <Header>
+            <Title>sss_存储过程返回PramObj</Title>
+            <Shortcut>sss_存储过程返回PramObj</Shortcut>
+        </Header>
+        <Snippet>
+            <Code Language="cpp"><![CDATA[
+			try
+            {
+                OracleParameter[] pra = new OracleParameter[] {
+                    new OracleParameter("STR_机构编码",OracleType.VarChar,50),
+                    new OracleParameter("STR_病人ID",OracleType.VarChar,50),
+                    new OracleParameter("STR_门诊病历号",OracleType.VarChar,50),
+                    new OracleParameter("Int_返回值",OracleType.Int32),
+                    new OracleParameter("Str_返回信息",OracleType.VarChar,2000)
+                };
+                pra[0].Direction = ParameterDirection.Input;
+                pra[0].Value = InObj.p1;
+                pra[1].Direction = ParameterDirection.Input;
+                pra[1].Value = InObj.p3;
+                pra[2].Direction = ParameterDirection.Input;
+                pra[2].Value = InObj.p4;
+                pra[3].Direction = ParameterDirection.Output;
+                pra[4].Direction = ParameterDirection.Output;
+
+                dbhelper.RunProcedure("PR_互联互通_生成门诊待缴费清单", pra);
+                int i_返回值 = int.Parse(pra[3].Value.ToString());
+                string str_返回信息 = pra[4].Value.ToString();
+
+                if (i_返回值 == 0)
+                {
+                    OutObj.p1 = "0";
+                    OutObj.p2 = "保存成功";
+                }
+                else
+                {
+                    OutObj.p1 = "1";
+                    OutObj.p2 = str_返回信息;
+                }
+            }
+            catch (Exception ex)
+            {
+                OutObj.p1 = "1";
+                OutObj.p2 = ex.Message;
+            }
+            return OutObj;
+            ]]>
+            </Code>
+        </Snippet>
+    </CodeSnippet>
+</CodeSnippets>
